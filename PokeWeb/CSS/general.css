@@ -1,0 +1,340 @@
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Pixelify Sans', sans-serif;
+    /* Ajusta otros estilos para el título si es necesario */
+}
+
+.list {
+    font-family: 'Pixelify Sans', sans-serif;
+    /* Ajusta otros estilos para la lista si es necesario */
+}
+
+
+body {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pokemon-container img {
+  margin-right: 50px;
+}
+
+.pixelify-sans p {
+  font-size: 25px;
+}
+
+.type-button {
+  display: inline-block;
+  color: orange;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+}
+
+.type-text {
+  margin: 0;
+  padding: 0;
+}
+
+.type-link {
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#pokemon-description {
+  text-align: center;
+}
+
+.pixelify-sans #pokemon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pixelify-sans #pokemon-description {
+  margin-left: 50px;
+}
+
+.pixelify-sans #pokemon-image {
+  margin-right: 50px;
+}
+
+.pixelify-sans #pokemon-name {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pixelify-sans #pokemon-type {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pixelify-sans #pokemon-description h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pixelify-sans #pokemon-description p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.pixelify-sans #pokemon-back-button {
+  margin-top: 20px;
+}
+
+.pixelify-sans #pokemon-back-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.pixelify-sans #pokemon-back-button a:hover {
+  text-decoration: underline;
+}
+
+.pixelify-sans .pokemon-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pixelify-sans .pokemon-form button {
+  margin: 0 10px;
+}
+
+.pixelify-sans .return-button {
+  margin-top: 20px;
+}
+
+.pixelify-sans button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #FF69B4;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pixelify-sans button:hover {
+  background-color: #FF4081;
+}
+
+.red-button {
+  background-color: red;
+}
+
+.purple-button {
+  background-color: purple;
+}
+
+.green-button {
+  background-color: green;
+}
+
+#pokemon-form {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.pixelify-sans form {
+  margin-top: 20px;
+}
+
+.pixelify-sans #pokemon-form {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .pixelify-sans #pokemon-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .pixelify-sans #pokemon-description {
+      margin-left: 0;
+  }
+
+  .pixelify-sans #pokemon-image {
+      margin-right: 0;
+  }
+
+  .pixelify-sans #pokemon-name {
+      font-size: 30px;
+      margin-bottom: 10px;
+  }
+
+  .pixelify-sans #pokemon-type {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  .pixelify-sans #pokemon-description h2 {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+  }
+
+  .pixelify-sans #pokemon-description p {
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+
+  .pixelify-sans #pokemon-back-button {
+      margin-top:20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pixelify-sans #pokemon-name {
+      font-size: 20px;
+      margin-bottom: 5px;
+  }
+
+  .pixelify-sans #pokemon-type {
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+
+  .pixelify-sans #pokemon-description h2 {
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 2px;
+  }
+
+  .pixelify-sans #pokemon-description p {
+      font-size: 12px;
+      margin-bottom: 2px;
+  }
+
+  .pixelify-sans #pokemon-back-button {
+      margin-top: 10px;
+  }
+}
+
+/* Estilos para los enlaces */
+.type-text {
+  text-decoration: none; /* Quita el subrayado */
+  color: white; /* Cambia el color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+/* Estilos para los enlaces al pasar el ratón */
+.type-text:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+.pokemon-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pokemon-images img {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 600px; /* Ancho del carrusel, ajusta según sea necesario */
+  margin-right: 20px; /* Espacio entre el carrusel y las flechas */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 9); /* Ancho total del carrusel */
+}
+
+.carousel-images img {
+  width: 200px; /* Ancho de cada imagen */
+  flex-shrink: 0;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente las flechas con el carrusel */
+  margin-top: 10px; /* Añade margen superior */
+}
+
+.prev,
+.next {
+  background-color: pink; /* Cambia el color a rosa */
+  border: 2px solid black; /* Agrega un borde para resaltar las flechas */
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 50%; /* Hace que el borde sea circular */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave */
+}
+
+.prev:hover,
+.next:hover {
+  background-color: black;
+  color: pink;
+}
+  /* Media Queries */
+
+@media (max-width: 768px) {
+  .image {
+      max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+      margin-right: 0; /* Elimina el margen derecho en dispositivos más pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 30px; /* Ajusta el tamaño del título para dispositivos más pequeños */
+      padding: 5px 10px; /* Ajusta el padding del título para dispositivos más pequeños */
+  }
+
+  a {
+      font-size: 18px; /* Ajusta el tamaño de los enlaces para dispositivos más pequeños */
+  }
+}
